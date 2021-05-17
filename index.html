@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Resume Creater</title>
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="head">
+        <div class="hcon">
+            <input type="text" name="first Name" placeholder="First Name" id="fname" class="inthead">
+            <input type="text" name="last Name" placeholder="Last Name" id="lname" class="inthead">
+        </div>
+        <div class="hcon">
+            <input type="text" name="phone" id="contact" placeholder="Phone Number" class="inthead">
+        </div>
+        <div class="hcon">
+            <input type="email" name="email" id="eml" placeholder="Email" class="inthead">
+        </div>
+    </div>
+    <hr color="Black" size="5">
+
+    <!-- the next left area -->
+
+    <div class="left">
+        <table>
+            <tr>
+                <td>
+                    <div class="about">
+                        <textarea name="about" id="aboutme" placeholder="About me - Enter Here"></textarea>
+                    </div>
+                </td>
+
+
+                <td id="im1">
+                    <div class="img">
+                        <p><label for="file" id="label">Upload Image</label></p>
+                        <p><input type="file" accept="image/*" name="imaeg" id="file" onchange="loadFile(event)"></p>
+                        <p><img id="output" width="200" style="border: 3px solid Black;"></p>
+                    </div>
+                </td>
+            </tr>
+        </table>
+
+    </div>
+    <br>
+    <br>
+    <hr color="black" size="7">
+    <table id="tabledown">
+        <tr>
+            <td id="td1" rowspan="2">
+                <div class="vl">
+                    <h2 id="exp">Experience :-</h2>
+                    <hr color="red" size="5">
+                    <h2 id="job1">Job 1 :- </h2>
+                    <input type="text" name="post" id="post" placeholder="Post of job" class="vld">
+                    <div>
+                        <input type="text" name="Company name" id="company" placeholder="Company name" class="vld">
+                    </div>
+                    <div>
+                        <input type="text" name="place" id="place" placeholder="City" class="vld">
+                    </div>
+                    <h4 id="vlh">Interval of time :-</h4>
+                    <input type="Date" class="vld">
+                    <h4 id="vlh">to</h4>
+                    <input type="Date" class="vld">
+                    <div id="tar">
+                        <textarea name="aboutjob" id="jobdes" class="vld"
+                            placeholder="Enter Your Job Description"></textarea>
+                    </div>
+                </div>
+
+                <div id="job2">
+                    <hr color="red" size="5">
+                    <h2 id="job22">Job 2 :- </h2>
+                    <input type="text" name="post" id="post2" placeholder="Post of job" class="vld">
+                    <div>
+                        <input type="text" name="Company name" id="company2" placeholder="Company name" class="vld">
+                    </div>
+                    <div>
+                        <input type="text" name="place" id="place2" placeholder="City" class="vld">
+                    </div>
+                    <h4 id="vlh">Interval of time :-</h4>
+                    <input type="Date" class="vld">
+                    <h4 id="vlh">to</h4>
+                    <input type="Date" class="vld">
+                    <div id="tar">
+                        <textarea name="aboutjob" id="jobdes2" class="vld"
+                            placeholder="Enter Your Job Description"></textarea>
+                    </div>
+                </div>
+                <div class="sel" id="select" onclick="addnew()">
+                    <select name="addnew" id="newadd">
+                        <option value="1" id="none" selected>None</option>
+                        <option value="2" id="add1">AddNew</option>
+                    </select>
+                </div>
+                <div id="job3">
+                    <hr color="red" size="5">
+                    <h2 id="job33">Job 3 :- </h2>
+                    <input type="text" name="post" id="post" placeholder="Post of job" class="vld">
+                    <div>
+                        <input type="text" name="Company name" id="company" placeholder="Company name" class="vld">
+                    </div>
+                    <div>
+                        <input type="text" name="place" id="place" placeholder="City" class="vld">
+                    </div>
+                    <h4 id="vlh">Interval of time :-</h4>
+                    <input type="Date" class="vld">
+                    <h4 id="vlh">to</h4>
+                    <input type="Date" class="vld">
+                    <div id="tar">
+                        <textarea name="aboutjob" id="jobdes" class="vld"
+                            placeholder="Enter Your Job Description"></textarea>
+                    </div>
+                </div>
+
+            </td>
+            <td>
+                <div class="vr1">
+
+
+                    <div>
+                        <h2 id="vrd"> Highlights :- </h2>
+
+                    </div>
+
+                    <hr color="red" size="5" id="hr1">
+
+                    <div id="vrt">
+                        <textarea name="Highlights" id="vrta" placeholder="Enter the key highlights"></textarea>
+                    </div>
+
+                    <hr color="red" size="5" id="hr2">
+
+                    <div>
+                        <h2 id="edu"> Education :- </h2>
+
+                    </div>
+
+                    <hr color="red" size="5" id="hr3">
+
+                    <div>
+                        <textarea name="Highlights" id="edutr"
+                            placeholder="Enter Your Education Details Here ..."></textarea>
+                    </div>
+
+                </div>
+            </td>
+
+        </tr>
+
+        <div class="vl"></div>
+    </table>
+    <hr color="black" size="7">
+
+    <div >
+        <div>
+            <p id="hb"> Hobbies :-</p>
+        </div>
+        <div class="hob">
+            <textarea id="hbr" placeholder="Enter Your Hobbies"></textarea> 
+        </div>
+        
+    </div>
+
+    <div class="pr">
+        <button onclick="window.print()" id="but">Print</button>
+    </div>
+    <div id="validate">
+        <button onclick="validate()">Validate</button>
+    </div>
+</body>
+
+</html>

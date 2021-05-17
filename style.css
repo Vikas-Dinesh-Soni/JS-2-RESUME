@@ -1,0 +1,282 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100%;
+}
+.head {
+  display: flexbox;
+  justify-content: center;
+  background-color: rgb(92, 28, 92);
+  height: 220px;
+}
+
+.hcon {
+  display: flex;
+  justify-content: center;
+  padding-top: 15px;
+}
+
+.inthead {
+  text-align: center;
+  background-color: transparent;
+  width: fit-content;
+  border: none;
+}
+
+#fname,
+#lname {
+  font-size: 62px;
+  width: fit-content;
+  color: White;
+  font-weight: bolder;
+  margin-top: 15px;
+}
+#fname {
+  text-align: right;
+  margin-right: 20px;
+  color: rgb(214, 136, 18);
+  width: 500px;
+}
+#lname {
+  text-align: left;
+  width: 500px;
+}
+
+#contact {
+  color: White;
+  font-size: 18px;
+}
+#eml {
+  color: White;
+  font-size: 18px;
+}
+#aboutme {
+  width: 720px;
+  min-height: 200px;
+  font-size: 21px;
+  text-align: left;
+  color: black;
+  margin-top: 30px;
+  margin-left: 20px;
+  padding: 5px 7px;
+  border: none;
+}
+
+.img {
+  padding-right: 200px;
+}
+img {
+  width: 138px;
+  height: 190px;
+}
+
+#label {
+  visibility: visible;
+}
+
+#file {
+  width: 190px;
+}
+
+#exp{
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  font-size: 35px;
+  color: rgb(214, 136, 18);
+  font-weight: bolder;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  text-align: center;
+}
+
+.vld {
+  margin-left: 20px;
+  margin-top: 10px;
+  width: 220px;
+  height: 30px;
+  font-weight: bold;
+  font-size: 18px;
+  text-align: center;
+}
+
+#vlh {
+  margin-left: 20px;
+  margin-top: 5px;
+  margin-bottom: 3px;
+  font-size: 21px;
+}
+
+#jobdes, #jobdes2 {
+  width: 700px;
+  height: 300px;
+  font-size: 21px;
+  text-align: left;
+  color: black;
+  margin-top: 30px;
+  margin-left: 20px;
+  padding: 5px 7px;
+  border: none;
+  margin-right: 20px;
+}
+
+#td1 {
+  width: 800px;
+  border-right: 3px solid red;
+}
+
+#job1, #job22, #job33{
+  color: brown;
+  font-size: 32px;
+  font-weight: bold;
+  font-family: monospace;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+#post, #company, #place, #post2, #company2, #place2{
+    font-size: 20px;
+    border: none;
+    width: 500px;
+    margin: 3px;
+    text-align: left;
+    padding-left: 16px;
+
+}
+
+#newadd{
+    width: 300px;
+    font-size: 20px;
+    display: flex;
+}
+
+.sel{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+#job3{
+    display: none;
+    
+}
+
+#select{
+    visibility: visible;
+}
+
+#vrd{
+    position: absolute;
+    top: 503px;
+    left: 950px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    font-size: 35px;
+    color: rgb(214, 136, 18);
+    font-weight: bolder;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    
+}
+
+#vrta{
+    position: absolute;
+    top: 610px;
+    left: 870px;
+    height: 550px;
+    width: 350px;
+    margin: 20px;
+    padding: 10px;
+    font-size: 21px;
+    border:none;
+}
+
+#hr1{
+    position: absolute;
+    top: 583px;
+}
+
+#hr2{
+    position: absolute;
+    top: 1251px;
+}
+
+#edu{
+    position: absolute;
+    top: 1250px;
+    left: 950px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    font-size: 35px;
+    color: rgb(214, 136, 18);
+    font-weight: bolder;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    
+}
+
+#hr3{
+    position: absolute;
+    top: 1330px;
+}
+
+#edutr{
+    position: absolute;
+    top: 1350px;
+    left: 870px;
+    height: 590px;
+    width: 350px;
+    margin: 20px;
+     padding: 10px;
+    font-size: 21px;
+    border:none;
+}
+
+#hb{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 20px;
+    color: rgb(214, 136, 18);
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+#hbr{
+    width: 750px;
+    height: 130px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    float: left;
+    padding: 20px;
+    font-size: 21px;
+} 
+
+.hob{
+    display: flex;
+    justify-content: center;
+}
+
+button{
+    width: 350px;
+    letter-spacing: 3px;
+    background-color: rgb(247, 160, 31);
+    color: black;
+    font-size: 18px;
+    padding: 10px 60px;
+    border-radius: 25px;
+}
+
+#but{
+    visibility: hidden;
+    margin-bottom: 30px;
+}
+.pr{
+    display: flex;
+    justify-content: center;
+}
+#validate{
+    display: flex;
+    justify-content: center;
+}
